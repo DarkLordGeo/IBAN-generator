@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/output.css" rel="stylesheet">
+  <title>Tailwind Setup</title>
+</head>
+<body class="m-0 bg-bgColor h-full flex flex-col font-mono">
+      <main class="justify-center items-center gap-5 min-h-screen flex flex-col">
+        <div>
+          <h4 class="text-white text-2xl ">Georgian IBAN Generator</h4>
+        </div>
+        <div class="flex gap-2 flex-col min-[320px]:lg:flex-row">
+            <div class="flex gap-2 items-center justify-center">
+                <div>
+                    <form class="w-20">
+                        <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-0 focus:outline-none focus:border-none block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-none">
+                            <option selected>Bank</option>
+                            <option value="BOG">BOG</option>
+                            <option value="TBC">TBC</option>
+                            <option value="LIB">LIB</option>
+                        </select>
+                    </form>
+                </div>
+                <div>
+                    <input type="text" class="bg-gray-50 border w-52 min-[469px]:lg:w-60  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-0 focus:outline-none focus:border-none block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-0 dark:focus:border-none" id="IBAN">
+                </div>
+            </div>
+            <div class="flex justify-center"> 
+                <button class="relative inline-flex items-center justify-center p-0.5  overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800" id="generate">
+                    <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    Genearte
+                    </span>
+                </button>
+            </div>
+        </div>
+      </main>
+    <script src="script.js"></script>
+  </body>
+</html>
